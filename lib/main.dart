@@ -1,19 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_nepal/category_route.dart';
 import './category.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Hello Rectangle',
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('Hello Rectangle'),
-          ),
-          body: Category(
-              ic: Icons.access_alarm, colors: Colors.amber, text: "MyTest")),
-    ),
-  );
+  runApp(MaterialApp(home: CategoryRoute()));
 }
 
 // class HelloRectangle extends StatelessWidget {

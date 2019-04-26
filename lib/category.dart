@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_nepal/converter_route.dart';
+import 'package:flutter_nepal/unit.dart';
 
 class Category extends StatelessWidget {
   final double height = 100;
   final IconData ic;
   final Color colors;
   final String text;
+  final List<Unit> units;
 
   //required checks if the parameter has been passed or not and the assert checks
   //if the sent parameters are null or not
-  const Category({
-    @required this.text,
-    @required this.colors,
-    @required this.ic,
-  })  : assert(text != null),
+  const Category(
+      {@required this.text,
+      @required this.colors,
+      @required this.ic,
+      @required this.units})
+      : assert(text != null),
         assert(colors != null),
-        assert(ic != null);
+        assert(ic != null),
+        assert(units != null);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +30,7 @@ class Category extends StatelessWidget {
         highlightColor: this.colors,
         splashColor: this.colors,
         onTap: () {
-          print("I am pressed");
+          _navigateToConverter(context);
         },
         child: Container(
           height: height,
@@ -50,5 +55,29 @@ class Category extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  /// Navigates to the [ConverterRoute].
+  void _navigateToConverter(BuildContext context) {
+    Navigator.of(context).push(MaterialPageRoute<Null>(
+      builder: (BuildContext context) {
+        return Scaffold(
+          appBar: AppBar(
+            elevation: 1.0,
+            title: Text(
+              text,
+              style: Theme.of(context).textTheme.display1,
+            ),
+            centerTitle: true,
+            backgroundColor: colors,
+          ),
+          body: ConverterRoute(
+            color: colors,
+            name: text,
+            units: units,
+          ),
+        );
+      },
+    ));
   }
 }
