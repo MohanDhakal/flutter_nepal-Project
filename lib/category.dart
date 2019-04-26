@@ -20,35 +20,35 @@ class Category extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Build the custom widget here, referring to the Specs.
     return Center(
-        child: InkWell(
-      borderRadius: BorderRadius.circular(height / 2),
-      highlightColor: this.colors,
-      splashColor: this.colors,
-      onTap: () {
-        print("I am pressed");
-      },
-      child: Container(
-        height: height,
-        padding: EdgeInsets.all(8),
-        decoration:
-            BoxDecoration(borderRadius: BorderRadius.circular(height / 2)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Icon(
-                this.ic,
-                size: 60,
-              ),
-            ),
-            Text(
-              this.text,
-              style: TextStyle(fontSize: 24),
-            ),
-          ],
+      child: InkWell(
+        borderRadius: BorderRadius.circular(height / 2),
+        highlightColor: this.colors,
+        splashColor: this.colors,
+        onTap: () {
+          print("I am pressed");
+        },
+        child: Container(
+          height: height,
+          padding: EdgeInsets.all(8),
+          decoration:
+              BoxDecoration(borderRadius: BorderRadius.circular(height / 2)),
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Icon(
+                    this.ic,
+                    size: 60,
+                  ),
+                ),
+                Text(
+                  this.text,
+                  style: TextStyle(fontSize: 24),
+                ),
+              ]),
         ),
       ),
-    ));
+    );
   }
 }

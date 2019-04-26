@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # flutter_nepal
+=======
+# flutter_app
+>>>>>>> d1ae0d2e4d58ca053b1950f98655ac711c343e2e
 
 A new Flutter application.
 

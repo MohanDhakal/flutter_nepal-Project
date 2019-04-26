@@ -323,7 +323,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohandkl.flutterNepal;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterApp;
+>>>>>>> d1ae0d2e4d58ca053b1950f98655ac711c343e2e
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -448,7 +452,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohandkl.flutterNepal;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterApp;
+>>>>>>> d1ae0d2e4d58ca053b1950f98655ac711c343e2e
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -471,7 +479,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohandkl.flutterNepal;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterApp;
+>>>>>>> d1ae0d2e4d58ca053b1950f98655ac711c343e2e
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
