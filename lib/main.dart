@@ -3,25 +3,25 @@ import 'package:flutter_nepal/category_route.dart';
 import './category.dart';
 
 void main() {
-  runApp(MaterialApp(home: CategoryRoute()));
+  runApp(HelloRectangle());
 }
 
-// class HelloRectangle extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Center(
-//       child: Container(
-//         color: Colors.greenAccent,
-//         height: 400.0,
-//         width: 300.0,
-//         child: Center(
-//           child: Text(
-//             'Hello!',
-//             style: TextStyle(fontSize: 40.0),
-//             textAlign: TextAlign.center,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+class HelloRectangle extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Unit Converter',
+      theme: ThemeData(
+        textTheme: Theme.of(context).textTheme.apply(
+              bodyColor: Colors.black,
+              displayColor: Colors.grey[600],
+            ),
+        // This colors the [InputOutlineBorder] when it is selected
+        primaryColor: Colors.grey[500],
+        textSelectionHandleColor: Colors.green[500],
+      ),
+      home: CategoryRoute(),
+    );
+  }
+}
